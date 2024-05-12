@@ -1,0 +1,76 @@
+/* styles.css */
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    background: #f4f4f4; /* Light background color for better contrast */
+}
+
+.container {
+    text-align: center;
+    display: flex;
+    flex-direction: column; /* Ensures vertical stacking of elements */
+    align-items: center; /* Centers the content horizontally */
+    justify-content: center; /* Centers the content vertically */
+    width: 100%; /* Ensures the container takes the full width */
+    max-width: 360px; /* Maximum width of the container */
+    padding: 20px; /* Adds padding around the content */
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+}
+
+.bouquet {
+    width: 100%; /* Responsive width */
+    max-width: 300px; /* Maximum width of the image */
+    height: auto; /* Keeps the image aspect ratio intact */
+    margin-bottom: 20px; /* Space between image and buttons */
+}
+
+.button {
+    font-size: 16px; /* Adequate font size for readability */
+    padding: 15px 30px; /* More padding for a bigger button look */
+    cursor: pointer;
+    border: none;
+    color: white;
+    margin: 10px; /* Spacing around the buttons */
+    border-radius: 20px; /* Rounded corners for a softer look */
+    background-image: linear-gradient(to top left, #ffffff, #cccccc); /* Subtle gradient for a glossy effect */
+    box-shadow: 0 4px 6px rgba(0,0,0,0.3), 0 -2px 4px rgba(255,255,255,0.5) inset; /* Reduced shadow depth and subtler inner glow */
+    transition: all 0.2s ease-out; /* Smooth transition for effects */
+}
+
+.button:hover {
+    transform: translateY(-1px); /* Less pronounced raise on hover */
+    box-shadow: 0 6px 8px rgba(0,0,0,0.4), 0 -2px 5px rgba(255,255,255,0.6) inset; /* Slightly stronger shadow and inner light on hover */
+}
+
+.button:active {
+    transform: translateY(2px); /* Less pronounced push effect when clicked */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.3); /* Very shallow shadow to simulate pressing down */
+}
+
+.green {
+    background-image: linear-gradient(to top left, #4CAF50, #3C8D40); /* Green gradient for a vibrant effect */
+}
+
+.red {
+    background-image: linear-gradient(to top left, #F44336, #E53935); /* Red gradient for a vibrant effect */
+}
+
+.reset {
+    background-color: #555; /* Dark grey color for the reset button */
+    color: #fff; /* White text color */
+    margin-top: 20px; /* Space above the reset button */
+}
+
+.counter {
+    color: #333;
+    font-size: 16px;
+    margin-top: 5px; /* Space between button and counter text */
+}
